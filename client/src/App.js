@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Login from "./login/login";
 
 class App extends Component {
   state = {
@@ -9,9 +10,9 @@ class App extends Component {
 
   componentDidMount() {
     // Call our fetch function below once the component mounts
-    this.callBackendAPI()
-      .then((res) => this.setState({ data: res.express }))
-      .catch((err) => console.log(err));
+    // this.callBackendAPI()
+    //   .then((res) => this.setState({ data: res.express }))
+    //   .catch((err) => console.log(err));
   }
   // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
   callBackendAPI = async () => {
@@ -28,9 +29,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-          <h2>{this.state.data}</h2>
+          <img src="{logo}" alt="a" />
+          <h1 className="App-title">TWICE FAN CLUB</h1>
+          <Login />
         </header>
       </div>
     );
