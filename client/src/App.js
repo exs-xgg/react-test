@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Login from "./login/login";
+import Home from "./layouts/home.index";
 
 class App extends Component {
   state = {
@@ -26,15 +27,15 @@ class App extends Component {
   };
 
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src="{logo}" alt="a" />
-          <h1 className="App-title">TWICE FAN CLUB</h1>
-          <Login />
-        </header>
-      </div>
-    );
+    if (!true) {
+      return <Login />;
+    } else {
+      return (
+        <body>
+          <Home />
+        </body>
+      );
+    }
   }
 }
 
