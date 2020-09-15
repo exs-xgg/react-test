@@ -26,7 +26,7 @@ class Body extends Component {
                   group Twice. The EP was released on May 15, 2017 by JYP
                   Entertainment and distributed by Genie Music.
                 </Card.Text>
-                <Button variant="danger">Watch on YouTusbe</Button>
+                <Button variant="danger">Watch on YouTube</Button>
               </Card.Body>
             </Card>
           </Col>

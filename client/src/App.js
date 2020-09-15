@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import "./App.scss";
 import Login from "./login/login";
 import Home from "./layouts/home.index";
 
